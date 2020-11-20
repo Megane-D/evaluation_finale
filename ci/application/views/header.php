@@ -1,0 +1,61 @@
+
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wazza Immobilier</title>
+
+	 <!--Code pour intégrer feuille de style CSS de Bootstrap-->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+	<div class="container-fluid"> 
+		<!--En-tête de la page-->
+		<header class="col-12"> <!--MODIFIER PHOTO-->
+			<div class="col-2"><p><img src="public/Images/jarditou_logo.jpg" alt="Logo Jarditou" title="logo jarditou" width="200"/></p></div>
+			<div class="col-10"> <p class="text-right mb-5 mr-5 h4">Votre agence immobilière</p> </div>
+		</header>
+
+ <!--Barre de navigation-->
+ <nav class="navbar navbar-expand-sm bg-light navbar-light col-12">
+        
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	   <span class="navbar-toggler-icon"></span>
+	   </button>   
+
+<!--MODIFIER LIENS-->
+	   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		   <ul class="navbar-nav">
+			   <li class="nav-item">
+				   <a class="nav-link" href="index.php">Accueil</a>
+			   </li>
+			   <li class="nav-item">
+				<?php   echo anchor('propos', "A propos"); ?>
+			   </li>
+			   <li class="nav-item">
+				   <a class="nav-link" href="">Contactez-nous</a>
+			   </li>
+		   </ul>
+		</div> 
+
+		   <!--Barre de recherche-->
+		   <form action="search" method="get" class="form-inline">
+			<div class="input-group">
+			  <input type="text" name="search" class="form-control" placeholder="Votre promotion">
+			  <span class="input-group-btn">
+				<button type="submit" class="btn btn-outline-success"><span class="fa fa-search"></span> Rechercher</button>
+			  </span>
+			</div>
+		  </form>      
+	</nav>
+   
+	<div> <!--MODIFIER PHOTO-->
+		<img class="img-fluid" src="public/Images/promotion.jpg" alt="image responsive" title="promotion" width="100%"/>
+    </div>   
+    
+    ?>
